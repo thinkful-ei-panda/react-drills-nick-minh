@@ -2,13 +2,14 @@ import React from 'react';
 import Split from './composition/Split';
 import './App.css';
 import HelloWorld from './state-drills/HelloWorld.js';
+import Bomb from './state-drills/Bomb.js';
 
 function App() {
   return (
     <main className='App'>
 
-      <HelloWorld />
-      
+      <Bomb />
+
       {/* <Split className='left flexBasis='2'>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt ex velit suscipit facere officia?
       <Split />
