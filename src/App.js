@@ -1,18 +1,19 @@
 import React from 'react';
 import './App.css';
 import Tabs from './state-drills/Tabs';
+import Accordion from './state-drills/Accordion';
 
-const tabsProp = [
+const sectionProps = [
   {
-    name: 'First tab',
+    title: 'Section 1',
     content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam exercitationem quos consectetur expedita consequatur. Fugit, sapiente aspernatur corporis velit, dolor eum reprehenderit provident ipsam, maiores incidunt repellat! Facilis, neque doloremque.'
   },
   {
-    name: 'Second tab',
+    title: 'Section 2',
     content: 'Laboriosam exercitationem quos consectetur expedita consequatur. Fugit, sapiente aspernatur corporis velit, dolor eum reprehenderit provident ipsam, maiores incidunt repellat! Facilis, neque doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit.'
   },
   {
-    name: 'Third tab',
+    title: 'Section 3',
     content: 'Fugit, sapiente aspernatur corporis velit, dolor eum reprehenderit provident ipsam, maiores incidunt repellat! Facilis, neque doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam exercitationem quos consectetur expedita consequatur.'
   },
 ];
@@ -20,7 +21,7 @@ const tabsProp = [
 class App extends React.Component {
   render() {
     return <div>
-      <Tabs tabs={tabsProp} />
+      <Accordion sections={sectionProps} />
     </div>
   }
 }
