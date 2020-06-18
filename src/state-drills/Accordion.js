@@ -2,16 +2,16 @@ import React from 'react';
 
 class Accordion extends React.Component {
 
-  static defaultProps = {sections : []};
+  static defaultProps = { sections: [] };
 
   state = {
-    currentSectionIndex : 0
+    currentSectionIndex: 0
   }
 
   handleButtonClick(index) {
     this.setState(
       {
-        currentSectionIndex : index
+        currentSectionIndex: index
       }
     )
   }
@@ -24,11 +24,11 @@ class Accordion extends React.Component {
   }
 
   renderButtons() {
-    return this.props.sections.map( (section,index) => (
+    return this.props.sections.map((section, index) => (
       <li>
         <button key={index} onClick={() => this.handleButtonClick(index)}>{section.title}</button>
-        {index===this.state.currentSectionIndex && this.renderContent()}
-      </li>      
+        {index === this.state.currentSectionIndex && this.renderContent()}
+      </li>
     ))
   }
 
@@ -39,8 +39,6 @@ class Accordion extends React.Component {
       </ul>
     )
   }
-
-
 }
 
 export default Accordion;
